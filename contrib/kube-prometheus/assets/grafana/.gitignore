@@ -1,1 +1,4 @@
 *-dashboard.json
+
+!nginx-ingress-dashboard.json
+!nodejs-dashboard.json
