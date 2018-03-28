@@ -46,13 +46,13 @@ groups:
       BY (le, cluster)) / 1e+06
     labels:
       quantile: "0.5"
-  - alert: K8SSchedulerDown
-    expr: absent(up{job="kube-scheduler"} == 1)
-    for: 5m
-    labels:
-      severity: critical
-    annotations:
-      description: There is no running K8S scheduler. New pods are not being assigned
-        to nodes.
-      runbook: https://coreos.com/tectonic/docs/latest/troubleshooting/controller-recovery.html#recovering-a-scheduler
-      summary: Scheduler is down
+  #- alert: K8SSchedulerDown
+  #  expr: absent(up{job="kube-scheduler"} == 1)
+  #  for: 5m
+  #  labels:
+  #    severity: critical
+  #  annotations:
+  #    description: There is no running K8S scheduler. New pods are not being assigned
+  #      to nodes.
+  #    runbook: https://coreos.com/tectonic/docs/latest/troubleshooting/controller-recovery.html#recovering-a-scheduler
+  #    summary: Scheduler is down

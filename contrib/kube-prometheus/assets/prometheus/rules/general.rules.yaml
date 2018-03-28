@@ -17,6 +17,13 @@ groups:
       description: This is a DeadMansSwitch meant to ensure that the entire Alerting
         pipeline is functional.
       summary: Alerting DeadMansSwitch
+  #- alert: TestAlertPaul
+  #  expr: vector(1)
+  #  labels:
+  #    severity: none
+  #  annotations:
+  #    description: test paul
+  #    summary: test paul
   - record: fd_utilization
     expr: process_open_fds / process_max_fds
   - alert: FdExhaustionClose
